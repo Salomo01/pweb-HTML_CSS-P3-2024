@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DressLy - Discover the Latest Fashion Trends</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,17 +14,16 @@
                 <img src="sal's.jpg" alt="DressLy">
             </div>
             <ul class="nav-links">
-                <li><a href="umkm.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="#new-arrivals">New Arrivals</a></li>
-                <li><a href="#sale">Sale</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="newarrival.html">New</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="bestsellers.html">Bestsellers</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-icons">
-                <a href="#search" class="icon-search"></a>
-                <a href="#cart" class="icon-cart"></a>
-                <a href="#account" class="icon-account"></a>
+                <a href="#search" class="icon-link"><i data-feather="search"></i></a>
+                <a href="#cart" class="icon-link"><i data-feather="shopping-cart"></i></a>
+                <a href="#account" class="icon-link"><i data-feather="user"></i></a>
             </div>
         </nav>
     </header>
@@ -78,35 +78,50 @@
                 <div class="product-card">
                     <img src="snearkers.jpg" alt="Sneaker">
                     <h3>Sneaker</h3>
+                    <h4 class="Best">Bestsellers</h4>
+                    <h4 class="Sale">Sale</h4>
+                    <h4 class="BrandNew">BrandNew</h4>
                     <div class="rating">★★★★★</div>
                     <p class="price">
-                        <span class="original-price">Rp. 965,500</span>
-                        <span class="discounted-price">Rp. 1,087,500</span>
+                        <span class="original-price">Rp.2,200,000</span>
+                        <span class="discounted-price">Rp.1,800,000</span>
                     </p>
                 </div>
                 <div class="product-card">
                     <img src="womenrobes.jpg" alt="Women's Robes">
                     <h3>Women's Robes</h3>
+                    <h4 class="Best">Bestsellers</h4>
+                    <h4 class="Sale">Sale</h4>
                     <div class="rating">★★★★★</div>
-                    <p class="price">Rp. 755,000</p>
+                    <p class="price">
+                        <span class="original-price">Rp.1,000,100</span>
+                        <span class="discounted-price">Rp.920,500</span>
+                    </p>
                 </div>
                 <div class="product-card">
                     <img src="bag.jpg" alt="Bag">
                     <h3>Bag</h3>
+                    <h4 class="Best">Bestsellers</h4>
+                    <h4 class="Sale">Sale</h4>
                     <div class="rating">★★★★★</div>
                     <p class="price">
-                        <span class="original-price">Rp. 920,500</span>
-                        <span class="discounted-price">Rp. 1,000,100</span>
+                        <span class="original-price">Rp.876,000</span>
+                        <span class="discounted-price">Rp.734,000</span>
                     </p>
                 </div>
                 <div class="product-card">
                     <img src="menrobe.jpg" alt="Men's Robes">
                     <h3>Men's Robes</h3>
+                    <h4 class="Best">Bestsellers</h4>
+                    <h4 class="Sale">Sale</h4>
                     <div class="rating">★★★★★</div>
-                    <p class="price">Rp. 680,000</p>
+                    <p class="price">
+                        <span class="original-price">Rp.620,000</span>
+                        <span class="discounted-price">Rp.520,000</span>
+                    </p>
                 </div>
             </div>
-            <a href="#see-all" class="see-all-button">See All</a>
+            <a href="bestsellers.html" class="cta-button" target="_blank">See All</a>
         </section>
 
         <section class="stepper-section">
@@ -145,36 +160,36 @@
         <!-- Testimonial Section -->
         <section class="testimonial-section">
             <h3>TESTIMONIAL</h3>
-            <h2>Our Alumni Say</h2>
-            <p>These are the words of people who have taken our class</p>
+            <h2>Our Customer Say</h2>
+            <p>These are the words of people who have taken our product</p>
             
             <div class="testimonial-container">
                 <div class="testimonial-card">
-                    <img src="jason-todd.jpg" alt="Jason Todd">
-                    <h4>Jason Todd</h4>
-                    <p class="role">Entrepreneur</p>
-                    <p class="quote">"The mentor is cool, how to convey each material is also detailed and easy to understand.."</p>
+                    <img src="pakVincent.jpg" alt="Jason Todd">
+                    <h4>Pak Vincent</h4>
+                    <p class="role">Identitas 2</p>
+                    <p class="quote">"Saya minta 1 tapi dikasih 2, sama anak saya satu."</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="cassandra-k.jpg" alt="Cassandra K">
-                    <h4>Cassandra K</h4>
-                    <p class="role">Web Developer</p>
-                    <p class="quote">"The mentor is cool, how to convey each material is also detailed and easy to understand.."</p>
+                    <img src="ksatriakegelapan.jpg.jpeg" alt="Cassandra K">
+                    <h4>Ksatria Kegelapan</h4>
+                    <p class="role">Pejuang Len op Don</p>
+                    <p class="quote">"Kainnya dingin...tetapi tidak ketat, membuat saya semakin maju."</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="peter-parker.jpg" alt="Peter Parker">
-                    <h4>Peter Parker</h4>
-                    <p class="role">PHP Enthusiast</p>
-                    <p class="quote">"The mentor is cool, how to convey each material is also detailed and easy to understand.."</p>
+                    <img src="kakgem.jpg" alt="Peter Parker">
+                    <h4>Kak Gem</h4>
+                    <p class="role">Influencer</p>
+                    <p class="quote">"Belilah sebelum terlambat, paham."</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="jean-gray.jpg" alt="Jean Gray">
-                    <h4>Jean Gray</h4>
-                    <p class="role">Designer</p>
-                    <p class="quote">"The mentor is cool, how to convey each material is also detailed and easy to understand.."</p>
+                    <img src="irfan.jpg" alt="Jean Gray">
+                    <h4>Irfan</h4>
+                    <p class="role">Entitas User Fanny</p>
+                    <p class="quote">"Yaudah sih..."</p>
                 </div>
             </div>
         </section>
@@ -189,10 +204,10 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="newarrival.html">New Arrivals</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                        <li><a href="bestsellers.html">Bestsellers</a></li>
                     </ul>
                 </div>
         
@@ -205,7 +220,10 @@
             <div class="footer-bottom">
                 <p>&copy; 2024 DressLy. All rights reserved.</p>
             </div>
-        </footer>                 
+        </footer> 
+        <script>
+            feather.replace();
+        </script>                
     </main>
 </body>
 </html>
