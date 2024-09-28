@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - DressLy</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,16 +14,16 @@
                 <img src="sal's.jpg" alt="DressLy">
             </div>
             <ul class="nav-links">
-                <li><a href="umkm.html">Home</a></li>
+                <li><a href="UMKM.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="#new-arrivals">New Arrivals</a></li>
-                <li><a href="#sale">Sale</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="newarrival.html">New</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="bestsellers.html">Bestsellers</a></li>
             </ul>
             <div class="nav-icons">
-                <a href="#search" class="icon-search"></a>
-                <a href="#cart" class="icon-cart"></a>
-                <a href="#account" class="icon-account"></a>
+                <a href="#search" class="icon-link"><i data-feather="search"></i></a>
+                <a href="#cart" class="icon-link"><i data-feather="shopping-cart"></i></a>
+                <a href="#account" class="icon-link"><i data-feather="user"></i></a>
             </div>
         </nav>
     </header>
@@ -42,12 +43,16 @@
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
                 
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Email: info@dressly.com</p>
-                    <p>Phone: +123 456 789</p>
-                    <p>Address: 123 Fashion Street, City, Country</p>
-                </div>
+                <div class="content-wrapper">
+                    <div class="contact-info-card">
+                      <h2>Contact Information</h2>
+                      <p>Email: info@dressly.com</p>
+                      <p>Phone: +123 456 789</p>
+                      <p>Address: 123 Fashion Street, City, Country</p>
+                    </div>
+                  </div>
+
+                
             </div>
         </section>
     </main>
@@ -61,10 +66,11 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="UMKM.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="newarrival.html">New Arrivals</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="bestsellers.html">Bestsellers</a></li>
                 </ul>
             </div>
         </div>
@@ -72,5 +78,8 @@
             <p>&copy; 2024 DressLy. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
