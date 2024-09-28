@@ -503,6 +503,21 @@ nav {
     transition: transform 0.3s ease;
 }
 
+.Best {
+    color: gold;
+    font-style: italic;
+}
+
+.Sale {
+    color: #5a5a5a;
+    font-style: oblique;
+}
+
+.BrandNew {
+    color: rgb(153, 15, 15);
+    font-style: inherit;
+}
+
 .product-card:hover {
     transform: translateY(-5px);
 }
@@ -510,6 +525,7 @@ nav {
 .product-card img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .product-card h3 {
@@ -639,30 +655,78 @@ nav {
     background-color: #e7958f;
 }
 
-.contact-info {
-    flex: 1;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.contact-info h3 {
-    color: #5b4036;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
-    color: #6d4b3c;
-}
-
 @media (max-width: 768px) {
     .contact-wrapper {
         flex-direction: column;
     }
 }
 
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-link {
+    margin-left: 15px;
+    color: #333; /* Sesuaikan dengan warna yang Anda inginkan */
+}
+
+.icon-link i {
+    width: 24px;
+    height: 24px;
+}
+
+/* Gaya umum untuk konten */
+.content-wrapper {
+    position: relative;
+    background-color: #f5efe6; /* Warna background sesuai dengan gambar */
+    padding: 40px;
+  }
+  
+  /* Gaya untuk kartu Contact Information */
+  .contact-info-card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Menempatkan kartu di atas background */
+    border-radius: 10px;
+  }
+  
+  /* Efek lapisan belakang untuk memberikan kedalaman */
+  .contact-info-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #e8d8c6; /* Warna sedikit lebih gelap dari background */
+    border-radius: 8px;
+    z-index: -1; /* Menempatkan lapisan ini di bawah kartu utama */
+  }
+  
+  /* Gaya untuk judul Contact Information */
+  .contact-info-card h2 {
+    color: #6b4f3a; /* Warna coklat tua sesuai dengan tema */
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Gaya untuk informasi kontak */
+  .contact-info-card p {
+    color: #8c7b6b; /* Warna coklat muda untuk teks */
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  /* Hover efek untuk memberikan interaktivitas */
+  .contact-info-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 
 
 
